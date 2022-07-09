@@ -532,6 +532,18 @@
             </li>
           </ul>
         </div>
+        <form class="footer-form" name="subscribe-form">
+          <strong class="subscribe-form-header">Подпишитесь на рассылку</strong>
+          <label>
+            <input class="footer-form-email" type="email" name="user-email" placeholder="E-mail" />
+          </label>
+          <button class="footer-form-btn" type="submit">
+            <span class="subscribe">Подписаться</span>
+            <svg class="send" height="24px" width="24px">
+              <use href="./images/symbol-defs.svg#send"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </footer>
     <!-- modal window start-->
@@ -542,6 +554,58 @@
             <use href="./images/symbol-defs.svg#close-icon"></use>
           </svg>
         </button>
+        <form name="order-form" autocomplete="on" novalidate>
+          <strong class="form-header">Оставьте свои данные, мы вам перезвоним</strong>
+          <label class="form-entry-field">
+            <span class="form-field-label">Имя</span>
+            <input
+              class="form-field-contact"
+              type="text"
+              name="user-name"
+              minlength="2"
+              placeholder=" "
+            />
+            <svg class="form-icon" height="18px" width="18px">
+              <use href="./images/symbol-defs.svg#person-black"></use>
+            </svg>
+          </label>
+          <label class="form-entry-field">
+            <span class="form-field-label">Телефон</span>
+            <input class="form-field-contact" type="tel" name="user-phone" placeholder=" " />
+            <svg class="form-icon" height="18px" width="18px">
+              <use href="./images/symbol-defs.svg#phone-black"></use>
+            </svg>
+          </label>
+          <label class="form-entry-field">
+            <span class="form-field-label">Почта</span>
+            <span class="form-field-werning"></span>
+            <input class="form-field-contact" type="email" name="user-email" placeholder=" " />
+            <svg class="form-icon" height="18px" width="18px">
+              <use href="./images/symbol-defs.svg#email-black"></use>
+            </svg>
+          </label>
+          <label class="form-entry-field comment">
+            <span class="form-field-label">Комментарий</span>
+            <textarea
+              class="form-field-comment"
+              name="user-comment"
+              cols="30"
+              rows="11"
+              placeholder="Введите текст"
+            ></textarea>
+          </label>
+          <label class="form-entry-field check">
+            <input class="visually-hidden form-chekbox" type="checkbox" name="user-agreement" />
+            <span class="custom-chekbox">
+              <svg class="custom-chekbox-icon" width="11px" height="8px">
+                <use href="./images/symbol-defs.svg#vector"></use>
+              </svg>
+            </span>
+            <span class="text-agreement">Соглашаюсь с рассылкой и принимаю</span>
+            <a class="link-agreement" href="">Условия договора</a>
+          </label>
+          <button class="form-submit-btn" type="submit" disabled>Отправить</button>
+        </form>
       </div>
     </div>
     <!-- modal window end-->
